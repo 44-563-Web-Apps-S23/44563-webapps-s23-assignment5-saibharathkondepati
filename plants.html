@@ -4,6 +4,25 @@
   <title>Plants for Trees</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    table, th, td{
+        border: 5px solid;
+    }
+    th, td {
+        color: blue;
+    }
+    table{
+        border-collapse: collapse;
+        padding: 8px;
+        margin: 15px;
+        width: 50%;
+    }
+    tr:nth-child(even){background-color: rgba(255, 255, 0, 0.137);}
+    tr:hover{background-color: yellow;
+    tr:nth-of-type(1) {background: blue;}
+    }
+    .card{float: left;}
+</style>
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -13,6 +32,27 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="plants.html">Interesting Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="advanced.html">Advanced</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <h1>Plants by Sai Bharath Kondepati</h1>
     <div class="container">
         <div class="row">
@@ -39,6 +79,140 @@
         <p>The plant row breaks first while resizing the browser because in bootstrap grid system the width of col-md (>992px)
             is greater than col-sm(>768p). So in plantrow we used this. So plant row breaks first
         </p>
+        <div class="container">
+          <img src="https://t4.ftcdn.net/jpg/02/45/60/73/360_F_245607351_BJvjxJsEilEIaGtpH52zhOpzrvPancGp.jpg" width="300" class="img-fluid rounded" alt="Kiwi fruit">
+          <img src="https://images.unsplash.com/photo-1597714026720-8f74c62310ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwdHJlZXxlbnwwfHwwfHw%3D&w=1000&q=80" height="300" width="300" class="img-fluid rounded" alt="Orange">
+          <img src="https://www.provenwinners.com/sites/provenwinners.com/files/imagecache/500x500/ifa_upload/nepeta_cats_meow_apj21_1.jpg" height="200" width="200" class="img-fluid rounded" alt="Nepeta">
+      </div>
+      <div class="container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Darmera_peltata.JPG" height="200" width="200" class="img-fluid img-thumbnail rounded" alt="Darmera">
+          <img src="https://cdn.mos.cms.futurecdn.net/QYtmzDAfYXEoQyYfCF9BQZ.jpg" height="300" width="300" class="img-fluid img-thumbnail rounded" alt="Euphorbia">
+          <img src="https://roundstoneseed.com/1191-large_default_btt/red-top-panicum.jpg" height="300" width="300" class="img-fluid img-thumbnail rounded" alt="Panicum">
+    </div>
+    <table class="table table-sm">
+      <caption>List of Plants, Mountains and Lakes</caption>
+      <thead>
+        <tr>
+          <th scope="row">#</th>
+          <th scope="col">Letter</th>
+          <th scope="col">Plant</th>
+          <th scope="col">Mountain</th>
+          <th scope="col">Lake</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>K</td>
+          <td>Kiwi fruit</td>
+          <td>Kilimanjaro</td>
+          <td>Kennedy Reservoir</td>            
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>O</td>
+          <td>Orange</td>
+          <td>Organ Pipes</td>
+          <td>Okutama</td>    
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>N</td>
+          <td>Nepeta</td> 
+          <td>Nanda devi</td>
+          <td>Nalamala Lake</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>D</td>
+          <td>Darmera</td>
+          <td>Dickerson</td>
+          <td>Dargin</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>E</td>
+          <td>Euphorbia</td>
+          <td>Everest</td>
+          <td>Emael Sagar Dam Lake</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>P</td>
+          <td>Panicum</td>
+          <td>Panchatantra</td>
+          <td>Pavan Sagar Reservoir</td>
+        </tr>
+      </tbody>
+  </table>
+  <div class=" btn-toolbar">
+    <div class="btn-group">
+        <a href="https://t4.ftcdn.net/jpg/02/45/60/73/360_F_245607351_BJvjxJsEilEIaGtpH52zhOpzrvPancGp.jpg" class="btn btn-success mr-1" aria-current="page">Kiwi fruit</a>
+        <a href="https://images.unsplash.com/photo-1597714026720-8f74c62310ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwdHJlZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="btn btn-success mr-1">Orange</a>
+        <a href="https://www.provenwinners.com/sites/provenwinners.com/files/imagecache/500x500/ifa_upload/nepeta_cats_meow_apj21_1.jpg" class="btn btn-success mr-1">Nepeta</a>
+    </div>
+    <div class="btn-group">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/d/d9/Darmera_peltata.JPG" class="btn btn-warning mr-1" aria-current="page">Darmera</a>
+        <a href="https://cdn.mos.cms.futurecdn.net/QYtmzDAfYXEoQyYfCF9BQZ.jpg" class="btn btn-warning mr-1">Euphorbia</a>
+    </div>
+    <div class="btn-group">
+        <a href="https://roundstoneseed.com/1191-large_default_btt/red-top-panicum.jpg" class="btn btn-danger mr-1">Panicum</a>
+    </div>
+</div>
+<br>
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="advanced.html">advanced html page</a></li>
+      <li><a class="dropdown-item" href="basic.html">basic html page</a></li>
+    </ul>
+</div>
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Plant</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your plant">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br>
+<div class="card" style="width: 18rem;">
+  <img src="https://t4.ftcdn.net/jpg/02/45/60/73/360_F_245607351_BJvjxJsEilEIaGtpH52zhOpzrvPancGp.jpg" class="card-img-top" alt="Kiwi fruit">
+  <div class="card-body">
+    <h5 class="card-title">Kiwi fruit</h5>
+    <p class="card-text">Plant kiwi plants in the spring after the threat of frost has passed. Kiwis typically begin bearing fruit 3 to 5 years after planting.</p>
+    <a href="https://www.almanac.com/plant/kiwifruit#:~:text=Plant%20kiwi%20plants%20in%20the,to%205%20years%20after%20planting." class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1597714026720-8f74c62310ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwdHJlZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="Orange">
+  <div class="card-body">
+    <h5 class="card-title">Orange</h5>
+    <p class="card-text">An orange is a fruit of various citrus species in the family Rutaceae (see list of plants known as orange); it primarily refers to Citrus × sinensis,[1] which is also called sweet orange.</p>
+    <a href="https://en.wikipedia.org/wiki/Orange_(fruit)" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://www.provenwinners.com/sites/provenwinners.com/files/imagecache/500x500/ifa_upload/nepeta_cats_meow_apj21_1.jpg" class="card-img-top" alt="Nepeta">
+  <div class="card-body">
+    <h5 class="card-title">Nepeta</h5>
+    <p class="card-text">Nepeta is a genus of flowering plants in the family Lamiaceae. The genus name is reportedly in reference to Nepete, an ancient Etruscan city.[2] There are about 250 species.</p>
+    <a href="https://en.wikipedia.org/wiki/Nepeta" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
 
 </body>
 </html>
